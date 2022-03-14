@@ -1,0 +1,15 @@
+C:\Users\user\source\repos\algoritmus_tetelek_csharp\algoritmus_tetelek_csharp\bin\Debug\net6.0\algoritmus_tetelek_csharp.exe
+C:\Users\user\source\repos\algoritmus_tetelek_csharp\algoritmus_tetelek_csharp\bin\Debug\net6.0\algoritmus_tetelek_csharp.deps.json
+C:\Users\user\source\repos\algoritmus_tetelek_csharp\algoritmus_tetelek_csharp\bin\Debug\net6.0\algoritmus_tetelek_csharp.runtimeconfig.json
+C:\Users\user\source\repos\algoritmus_tetelek_csharp\algoritmus_tetelek_csharp\bin\Debug\net6.0\algoritmus_tetelek_csharp.dll
+C:\Users\user\source\repos\algoritmus_tetelek_csharp\algoritmus_tetelek_csharp\bin\Debug\net6.0\algoritmus_tetelek_csharp.pdb
+C:\Users\user\source\repos\algoritmus_tetelek_csharp\algoritmus_tetelek_csharp\obj\Debug\net6.0\algoritmus_tetelek_csharp.csproj.AssemblyReference.cache
+C:\Users\user\source\repos\algoritmus_tetelek_csharp\algoritmus_tetelek_csharp\obj\Debug\net6.0\algoritmus_tetelek_csharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\user\source\repos\algoritmus_tetelek_csharp\algoritmus_tetelek_csharp\obj\Debug\net6.0\algoritmus_tetelek_csharp.AssemblyInfoInputs.cache
+C:\Users\user\source\repos\algoritmus_tetelek_csharp\algoritmus_tetelek_csharp\obj\Debug\net6.0\algoritmus_tetelek_csharp.AssemblyInfo.cs
+C:\Users\user\source\repos\algoritmus_tetelek_csharp\algoritmus_tetelek_csharp\obj\Debug\net6.0\algoritmus_tetelek_csharp.csproj.CoreCompileInputs.cache
+C:\Users\user\source\repos\algoritmus_tetelek_csharp\algoritmus_tetelek_csharp\obj\Debug\net6.0\algoritmus_tetelek_csharp.dll
+C:\Users\user\source\repos\algoritmus_tetelek_csharp\algoritmus_tetelek_csharp\obj\Debug\net6.0\refint\algoritmus_tetelek_csharp.dll
+C:\Users\user\source\repos\algoritmus_tetelek_csharp\algoritmus_tetelek_csharp\obj\Debug\net6.0\algoritmus_tetelek_csharp.pdb
+C:\Users\user\source\repos\algoritmus_tetelek_csharp\algoritmus_tetelek_csharp\obj\Debug\net6.0\algoritmus_tetelek_csharp.genruntimeconfig.cache
+C:\Users\user\source\repos\algoritmus_tetelek_csharp\algoritmus_tetelek_csharp\obj\Debug\net6.0\ref\algoritmus_tetelek_csharp.dll
