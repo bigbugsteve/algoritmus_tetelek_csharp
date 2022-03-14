@@ -3,7 +3,7 @@
 
 namespace Proj_02
 {
-    class Metszet
+    class Unio
     {
         
         static void Main(string[] args)
