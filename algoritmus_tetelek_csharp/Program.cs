@@ -54,6 +54,13 @@ namespace Proj_02
                 if (j < 5) { C_tomb[cdb] = A_tomb[i]; cdb++; }
             }
 
+            // metszet kiírása
+            Console.WriteLine("\nA metszet tömb elemei:");
+            for (j = 0; j < cdb; j++)
+            {
+                Console.Write("{0}\t", C_tomb[j]);
+            }
+
             Console.ReadKey();
         }
     }
