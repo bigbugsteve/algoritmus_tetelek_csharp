@@ -3,71 +3,55 @@
 
 namespace Proj_02
 {
-    class Log
+    class Metszet
     {
-        public static int BinarisKeres(int[] tomb, int keresettertek)
-        {
-            int eleje = 0;
-            int vege = tomb.Length; // 13
-
-            while (eleje <= vege)
-            {
-
-                int i = (eleje + vege) / 2; // első körben 7
-                Console.WriteLine("i értéke: {0}", i);
-                Console.WriteLine("eleje értéke: {1}", eleje);
-                //if(i == vege) return -1;
-                if (tomb[i] == keresettertek) return i;
-
-                else if (tomb[i] < keresettertek)
-                {
-                    eleje = i + 1;
-                }
-                else if (tomb[i] > keresettertek)
-                {
-                    vege = i - 1;
-                }
-            }
-            Console.WriteLine("eleje értéke a while ciklus után: {0}", eleje);
-
-            return -1;
-        }
-
-        //rekurzív implementáció
-        public static int BinarisKeresRekurziv(int[] tomb, int keresettertek, int eleje, int vege)
-        {
-            int mid = eleje + vege / 2;
-            if (vege < 1)
-            {
-                return -1;
-            }
-            if (tomb[mid] == keresettertek)
-            {
-                return mid;
-            }
-            if (tomb[mid] > keresettertek)
-                return BinarisKeresRekurziv(tomb, keresettertek, eleje, mid - 1);
-
-            return BinarisKeresRekurziv(tomb, keresettertek, mid + 1, vege);
-        }
-
+        
         static void Main(string[] args)
         {
+            int[] A_tomb = new int[10] { 13, 28, 43, 37, 10, 5, 8, 99, 101, 2 };
+            int[] B_tomb = new int[5] { 6, 43, 37, 10, 88 };
+            int i, j, cdb = 0;
+            int[] C_tomb = new int[15];
 
+            Console.WriteLine("Az eredeti tömbök:");
 
-            var tomb = new int[] { 0, 0, 1, 2, 2, 2, 3, 1, 4, 5, 6, 8, 9 };
+            Console.WriteLine("A tömb: ");
+            for (i = 0; i < 10; i++)
+                {
+                    Console.Write("{0}\t", A_tomb[i]);
+                }
 
-            var index = BinarisKeres(tomb, 8);  // 4
-            int index2 = BinarisKeresRekurziv(tomb, 8, 0, tomb.Length);
+            Console.WriteLine("\nB tömb:");
+            for (j = 0; j < 5; j++)
+                {
+                    Console.Write("{0}\t", B_tomb[j]);
+                }
 
-            if (index == -1)
+            // ===================================================================================================================================================================
+            // METSZETKÉPZÉS TÉTELE
+            // Rendelkezésre áll egy N> 0 és egy M > 0 elemű halmaz  az A[1..N] és B[1..M] vektorokban tárolva. Készítsük el a két halmaz metszetét a C[] vektorba!
+            //  Megoldás: vegyük egyenként az A[1..N] elemeit és nézzük meg, hogy találunk - e a B[1..M] elemei közt vele megegyezőt, s ha találunk tegyük ezt az elemet a C[]-be!
+
+            //    Bemenet: A[1..N], B[1..M]
+            //    Kimenet: C[]
+            //    Algoritmus :
+            //		Cdb:= 0
+            //        Ciklus i = 1 - től N - ig
+            //            j:= 1
+            //            Ciklus amíg j <= M és A[i] <> B[j]
+            //                j:= j + 1
+            //            Ciklus vége
+            //            Ha(j <= M) akkor Cdb:= Cdb + 1    :   C[Cdb]:= A[i]
+            //        Ciklus vége.
+            //    Algoritmus vége.
+
+            //metszet képzés
+            for (i = 0; i < 10; i++)
             {
-                Console.WriteLine("A keresett szám nincs a tömbben");
-            }
-            else
-            {
-                Console.WriteLine("A nyolcas indexe: {0}", index);
-                Console.WriteLine("Az egyes indexe: {0}", index2);
+                j = 0;
+                while (j < 5 && A_tomb[i] != B_tomb[j])
+                    j++;
+                if (j < 5) { C_tomb[cdb] = A_tomb[i]; cdb++; }
             }
 
             Console.ReadKey();
