@@ -5,6 +5,26 @@ namespace Proj_02
 {
     class Log
     {
+
+        //  Adott egy N>0 elemű RENDEZETT sorozat és egy keresett elem(Z). A sorozat elemeit az A[1..N] tömbben tároljuk.Olyan algoritmust kell írni amely eldönti, hogy van- e(Z) elem a sorozatban és ha van hányadik.Az eljárás során megkeressük a sorozat felét s kihasználjuk azt, hogy tudjuk a rendezettség miatt a keresett elem a felezéspont előtt vagy után van.Ezután tovább felezzük az így kapott részsorozatot addig amíg megtaláljuk a keresett elemet vagy, vagy összeért a felezett sorozat alsó és felső határa.
+        //  Szokás az eljárást intervallum felezéses módszernek is nevezni.
+
+        //  Bemenet: A[1..N] Rendezett a sorozat, Z
+        //  Kimenet: Sorsz                      // a Z elem sorszáma- ha van
+        //  Algoritmus:
+
+        //      AH:=1	:	FH:=N               // a sorozat alsó határa-AH  felső határa-FH
+        //      Ciklus
+
+        //          i:= EGÉSZRÉSZ((AH+FH)/2)	//  az egészrész függvény egy tört 
+        //                                      //  egészrészét adja
+        //		    Ha(A[i]<Z) akkor AH:=i+1
+        //		    Ha(A[i]>Z) akkor FH:=i-1 
+        //      amíg AH<=FH és A[i] <>Z
+        //      Ha(AH<=FH) akkor SORSZ:=i
+        //  Algoritmus vége.
+
+
         public static int BinarisKeres(int[] tomb, int keresettertek)
         {
             int eleje = 0;
