@@ -1,8 +1,10 @@
-# algoritmus_tetelek_csharp
+# Algoritmus tételek C#-ban
 
-# Download GIT: https://git-scm.com/downloads
+## Requirements
+- Download GIT: https://git-scm.com/downloads
 
-# Open the root directory where you want to clone.
-# Right click -> Git Bash Here
-# Type "git clone https://github.com/bigbugsteve/algoritmus_tetelek_csharp/"
-# Then open with Visual Studio
+## Installation
+- Open the root directory where you want to clone.
+- Right click -> Git Bash Here
+- Type "git clone https://github.com/bigbugsteve/algoritmus_tetelek_csharp/"
+- Then open with Visual Studio
