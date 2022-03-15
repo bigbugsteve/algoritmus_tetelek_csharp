@@ -1,4 +1,4 @@
-# Algoritmus tételek C#-ban
+# Algorithms in C#
 
 ## Requirements
 - Download GIT: https://git-scm.com/downloads
