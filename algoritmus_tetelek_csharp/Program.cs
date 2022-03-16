@@ -17,6 +17,7 @@ namespace feladat
 
             while (elso_szam <= utolso_szam)
             {
+                Console.WriteLine(elso_szam);
                 i = (elso_szam + utolso_szam) / 2;
                 if (keresett <= N[i])
                 {
