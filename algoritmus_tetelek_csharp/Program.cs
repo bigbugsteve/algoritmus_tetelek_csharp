@@ -11,7 +11,7 @@ namespace Proj_02
             int[] A_tomb = new int[10] { 13, 28, 43, 37, 10, 5, 8, 99, 101, 2 };
             int[] B_tomb = new int[5] { 6, 43, 37, 10, 88 };
             int i, j, cdb = 0;
-            int[] C_tomb = new int[15];
+            int[] C_tomb = new int[5];
 
             Console.WriteLine("Az eredeti tömbök:");
 
@@ -48,10 +48,17 @@ namespace Proj_02
             //metszet képzés
             for (i = 0; i < 10; i++)
             {
+                Console.WriteLine("i: {0}", i);
                 j = 0;
                 while (j < 5 && A_tomb[i] != B_tomb[j])
                     j++;
-                if (j < 5) { C_tomb[cdb] = A_tomb[i]; cdb++; }
+                if (j < 5) {
+                    Console.WriteLine("B tömb j-edik elem: {0}", B_tomb[j]);
+                    Console.WriteLine("A tömb i-edik elem: {0}", A_tomb[i]);
+
+                    C_tomb[cdb] = A_tomb[i];
+                    cdb++; 
+                }
             }
 
             // metszet kiírása
